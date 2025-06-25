@@ -73,8 +73,8 @@ if abs(percentage_diff) > 0:
     top_3_articles = articles[:3]   
     headlines = [f"Headline: {article['title']}" for article in top_3_articles]
         
-    account_sid = "Your_account_sid"
-    auth_token = "Your_auth_token"
+    account_sid = "Your_account_sid_API"
+    auth_token = "Your_auth_token_TOKEN"
 
     if diff < 0:
         client = Client(account_sid,auth_token)
