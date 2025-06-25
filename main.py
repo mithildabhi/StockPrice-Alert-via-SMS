@@ -11,7 +11,7 @@ STOCK_ENDPOINT = "https://www.alphavantage.co/query"
 NEWS_ENDPOINT = "https://newsapi.org/v2/everything"
 
 
-ALPHA_VANTAGE_API_KEY = "BKZQCQ3CNYTPMFXW"
+ALPHA_VANTAGE_API_KEY = "Your_api_key"
 
 parameters = {
     "function": "TIME_SERIES_DAILY",
@@ -53,7 +53,7 @@ print(f"The change in percentage {percentage_diff}%")
 if abs(percentage_diff) > 0:
     print("Get News")
     # Instead of printing ("Get News"), actually get the first 3 news pieces for the COMPANY_NAME. 
-    NEWS_API_KEY = "c6b294eb29764f4684eeb02f8b48b121"  # Replace with your NewsAPI key
+    NEWS_API_KEY = "Your_news_api "  # Replace with your NewsAPI key
 
     news_params = {
         "qInTitle": COMPANY_NAME,
@@ -73,8 +73,8 @@ if abs(percentage_diff) > 0:
     top_3_articles = articles[:3]   
     headlines = [f"Headline: {article['title']}" for article in top_3_articles]
         
-    account_sid = "AC5ab45a8aa0e17ff9b0399cd330ce7ca0"
-    auth_token = "9c3fb4a0d9ca9e552e0b08bddb833a7c"
+    account_sid = "Your_account_sid"
+    auth_token = "Your_auth_token"
 
     if diff < 0:
         client = Client(account_sid,auth_token)
